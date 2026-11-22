@@ -4,7 +4,7 @@ import os
 import random
 import glob
 import math
-from pygame.math import Vector2 as Vec
+from pygame.math import Vector2 as Vec 
 
 pygame.init() 
 
@@ -14,7 +14,9 @@ FPS = 960, 640, 60
 SPRITE_H = 72 
 SIDEWALK_H = 64 
 ATTACK_RANGE = 40 
-MAX_ENEMIES = 40 
+MAX_ENEMIES = 40
+
+BG_PATH = 'assets/background.jpg'
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT)) 
 pygame.display.set_caption('Subway')  
@@ -45,13 +47,63 @@ _cache = {}
 
 
 
-class Character(pygame.sprite.Sprite):
-  def __init__(self, x_pos, y_pos):
+
+def load_background():
+  img = pygame.image.load(BG_PATH).convert_alpha()
+  w, h = img.get_size() 
+  scale = max(WIDTH / w, HEIGHT / h)
+  img = pygame.transform.scale(img, (int(w * scale) + 1, int(h * scale)+ 1))
+  surf = pygame.Surface((WIDTH, HEIGHT))
+  surf.blit(img, ((WIDTH - img.get_width()) // 2, (HEIGHT - img.get_height()) // 2)) 
+  return surf 
+
+def load_blood():
+  files = [f for f in glob.glob(os.path.join(DECAL_DIR, '*.png'))
+           if 'blood' in os.path.basename(f).lower()] 
+  imgs = [pygame.image.load(f).convert_alpha() for f in files] 
+  return imgs
+
+
+blood_imgs = load_blood()
+
+
+def stamp_blood(pos, scale=1.0):
+  img = random.choice(blood_imgs)
+  w, h = img.get_size()
+  img = pygame.transform.scale(img, (max(4, int(w * scale)), max(4, int(h * scale)))) 
+  
+  
+  
+
+
+class Animated:
+  def __init__(self, pos):
     super().__init__()
-    self.x = x_pos
-    self.y = y_pos 
-    self.speed = 5
-    self.is_alive = True  
+    self.pos = Vec(pos) 
+    self.frames = []
+    self.index = 0.0
+    self.loop = True 
+    self.finished = False 
+    
+  def set_anim(self, frames, loop=True):
+    if frames is not self.frames:
+      self.frames = frames
+      self.index = 0.0
+      self.loop = loop
+      self.finished = False 
+      
+  def animate(self, dt, anim_fps=10):
+    self.index += anim_fps * dt
+    if self.loop:
+      self.index %= len(self.frames)
+    elif self.index >= len(self.frames):
+      self.index = len(self.frames) - 1  
+      self.finished = True
+    self.image = self.frames[int(self.index)]
+    self.rect = self.image.get_rect(center=(round(self.pos.x), round(self.pos.y))) 
+
+  def draw(self, surface):
+    surface.blit(self.image, self.rect) 
   
   def update(self):
     pass 
