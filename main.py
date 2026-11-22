@@ -35,9 +35,10 @@ class Player(Character):
                    'left': False,
                    'shoot': False
                    } 
-    self.rect = pygame.Rect(self.x_pos, self.y_pos, 200, 100)
+    # self.image = pygame.image.load('')  
+    self.rect = pygame.Rect(self.x_pos, self.y_pos, 200, 100) 
     self.dx = 0
-  
+   
   def input(self):
     keys = pygame.key.get_pressed() 
     
@@ -49,7 +50,7 @@ class Player(Character):
     
     
     if keys[pygame.K_a]: 
-      self.status['left'] = True
+      self.status['left'] = True 
       self.dx = -self.speed
     elif keys[pygame.K_d]:
       self.status['right'] = True 

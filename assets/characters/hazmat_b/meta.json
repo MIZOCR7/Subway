@@ -1,0 +1,149 @@
+{
+ "id": "hazmat_b",
+ "name": "Hazmat (alt)",
+ "frame_w": 32,
+ "frame_h": 32,
+ "layout": "rows = animation x direction, columns = frames",
+ "animations": [
+  {
+   "name": "idle_down",
+   "row": 0,
+   "frames": 4,
+   "fps": 6,
+   "loop": true
+  },
+  {
+   "name": "idle_left",
+   "row": 1,
+   "frames": 4,
+   "fps": 6,
+   "loop": true
+  },
+  {
+   "name": "idle_right",
+   "row": 2,
+   "frames": 4,
+   "fps": 6,
+   "loop": true
+  },
+  {
+   "name": "idle_up",
+   "row": 3,
+   "frames": 4,
+   "fps": 6,
+   "loop": true
+  },
+  {
+   "name": "walk_down",
+   "row": 4,
+   "frames": 6,
+   "fps": 8,
+   "loop": true
+  },
+  {
+   "name": "walk_left",
+   "row": 5,
+   "frames": 6,
+   "fps": 8,
+   "loop": true
+  },
+  {
+   "name": "walk_right",
+   "row": 6,
+   "frames": 6,
+   "fps": 8,
+   "loop": true
+  },
+  {
+   "name": "walk_up",
+   "row": 7,
+   "frames": 6,
+   "fps": 8,
+   "loop": true
+  },
+  {
+   "name": "attack_down",
+   "row": 8,
+   "frames": 5,
+   "fps": 10,
+   "loop": false
+  },
+  {
+   "name": "attack_left",
+   "row": 9,
+   "frames": 5,
+   "fps": 10,
+   "loop": false
+  },
+  {
+   "name": "attack_right",
+   "row": 10,
+   "frames": 5,
+   "fps": 10,
+   "loop": false
+  },
+  {
+   "name": "attack_up",
+   "row": 11,
+   "frames": 5,
+   "fps": 10,
+   "loop": false
+  },
+  {
+   "name": "hurt_down",
+   "row": 12,
+   "frames": 2,
+   "fps": 8,
+   "loop": false
+  },
+  {
+   "name": "hurt_left",
+   "row": 13,
+   "frames": 2,
+   "fps": 8,
+   "loop": false
+  },
+  {
+   "name": "hurt_right",
+   "row": 14,
+   "frames": 2,
+   "fps": 8,
+   "loop": false
+  },
+  {
+   "name": "hurt_up",
+   "row": 15,
+   "frames": 2,
+   "fps": 8,
+   "loop": false
+  },
+  {
+   "name": "death_down",
+   "row": 16,
+   "frames": 6,
+   "fps": 8,
+   "loop": false
+  },
+  {
+   "name": "death_left",
+   "row": 17,
+   "frames": 6,
+   "fps": 8,
+   "loop": false
+  },
+  {
+   "name": "death_right",
+   "row": 18,
+   "frames": 6,
+   "fps": 8,
+   "loop": false
+  },
+  {
+   "name": "death_up",
+   "row": 19,
+   "frames": 6,
+   "fps": 8,
+   "loop": false
+  }
+ ]
+}

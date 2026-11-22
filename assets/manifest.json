@@ -1,0 +1,397 @@
+{
+ "pack": "Zombie Horde (Free)",
+ "version": 1,
+ "characters": [
+  {
+   "id": "walker",
+   "name": "Walker",
+   "frames": 92
+  },
+  {
+   "id": "walker_b",
+   "name": "Walker (alt)",
+   "frames": 92
+  },
+  {
+   "id": "runner",
+   "name": "Runner",
+   "frames": 92
+  },
+  {
+   "id": "runner_b",
+   "name": "Runner (alt)",
+   "frames": 92
+  },
+  {
+   "id": "brute",
+   "name": "Brute",
+   "frames": 92
+  },
+  {
+   "id": "brute_b",
+   "name": "Brute (alt)",
+   "frames": 92
+  },
+  {
+   "id": "hazmat",
+   "name": "Hazmat",
+   "frames": 92
+  },
+  {
+   "id": "hazmat_b",
+   "name": "Hazmat (alt)",
+   "frames": 92
+  },
+  {
+   "id": "survivor",
+   "name": "Survivor",
+   "frames": 92
+  }
+ ],
+ "fx": [
+  {
+   "name": "blood_hit",
+   "frame_w": 32,
+   "frame_h": 32,
+   "frames": 6
+  },
+  {
+   "name": "blood_hit_right",
+   "frame_w": 32,
+   "frame_h": 32,
+   "frames": 6
+  },
+  {
+   "name": "blood_burst",
+   "frame_w": 48,
+   "frame_h": 48,
+   "frames": 8
+  },
+  {
+   "name": "gore_burst",
+   "frame_w": 64,
+   "frame_h": 64,
+   "frames": 8
+  },
+  {
+   "name": "muzzle_flash",
+   "frame_w": 16,
+   "frame_h": 16,
+   "frames": 3
+  },
+  {
+   "name": "bullet_impact",
+   "frame_w": 16,
+   "frame_h": 16,
+   "frames": 4
+  }
+ ],
+ "decals": [
+  "blood_decal_01",
+  "blood_decal_02",
+  "blood_decal_03",
+  "blood_decal_04",
+  "blood_decal_05",
+  "blood_decal_06",
+  "blood_decal_07",
+  "blood_decal_08",
+  "blood_decal_09",
+  "blood_decal_10"
+ ],
+ "sounds": [
+  {
+   "name": "zombie_groan_01",
+   "category": "zombie_voice",
+   "length_sec": 2.131,
+   "wav": "sfx/WAV/zombie_voice/zombie_groan_01.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_groan_01.ogg"
+  },
+  {
+   "name": "zombie_groan_02",
+   "category": "zombie_voice",
+   "length_sec": 2.203,
+   "wav": "sfx/WAV/zombie_voice/zombie_groan_02.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_groan_02.ogg"
+  },
+  {
+   "name": "zombie_groan_03",
+   "category": "zombie_voice",
+   "length_sec": 1.558,
+   "wav": "sfx/WAV/zombie_voice/zombie_groan_03.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_groan_03.ogg"
+  },
+  {
+   "name": "zombie_groan_04",
+   "category": "zombie_voice",
+   "length_sec": 1.649,
+   "wav": "sfx/WAV/zombie_voice/zombie_groan_04.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_groan_04.ogg"
+  },
+  {
+   "name": "zombie_groan_05",
+   "category": "zombie_voice",
+   "length_sec": 2.18,
+   "wav": "sfx/WAV/zombie_voice/zombie_groan_05.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_groan_05.ogg"
+  },
+  {
+   "name": "zombie_groan_06",
+   "category": "zombie_voice",
+   "length_sec": 1.952,
+   "wav": "sfx/WAV/zombie_voice/zombie_groan_06.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_groan_06.ogg"
+  },
+  {
+   "name": "zombie_groan_07",
+   "category": "zombie_voice",
+   "length_sec": 2.269,
+   "wav": "sfx/WAV/zombie_voice/zombie_groan_07.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_groan_07.ogg"
+  },
+  {
+   "name": "zombie_groan_08",
+   "category": "zombie_voice",
+   "length_sec": 1.992,
+   "wav": "sfx/WAV/zombie_voice/zombie_groan_08.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_groan_08.ogg"
+  },
+  {
+   "name": "zombie_snarl_attack_01",
+   "category": "zombie_voice",
+   "length_sec": 0.935,
+   "wav": "sfx/WAV/zombie_voice/zombie_snarl_attack_01.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_snarl_attack_01.ogg"
+  },
+  {
+   "name": "zombie_snarl_attack_02",
+   "category": "zombie_voice",
+   "length_sec": 1.059,
+   "wav": "sfx/WAV/zombie_voice/zombie_snarl_attack_02.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_snarl_attack_02.ogg"
+  },
+  {
+   "name": "zombie_snarl_attack_03",
+   "category": "zombie_voice",
+   "length_sec": 0.895,
+   "wav": "sfx/WAV/zombie_voice/zombie_snarl_attack_03.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_snarl_attack_03.ogg"
+  },
+  {
+   "name": "zombie_snarl_attack_04",
+   "category": "zombie_voice",
+   "length_sec": 0.986,
+   "wav": "sfx/WAV/zombie_voice/zombie_snarl_attack_04.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_snarl_attack_04.ogg"
+  },
+  {
+   "name": "zombie_snarl_attack_05",
+   "category": "zombie_voice",
+   "length_sec": 0.912,
+   "wav": "sfx/WAV/zombie_voice/zombie_snarl_attack_05.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_snarl_attack_05.ogg"
+  },
+  {
+   "name": "zombie_hurt_01",
+   "category": "zombie_voice",
+   "length_sec": 0.371,
+   "wav": "sfx/WAV/zombie_voice/zombie_hurt_01.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_hurt_01.ogg"
+  },
+  {
+   "name": "zombie_hurt_02",
+   "category": "zombie_voice",
+   "length_sec": 0.333,
+   "wav": "sfx/WAV/zombie_voice/zombie_hurt_02.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_hurt_02.ogg"
+  },
+  {
+   "name": "zombie_hurt_03",
+   "category": "zombie_voice",
+   "length_sec": 0.386,
+   "wav": "sfx/WAV/zombie_voice/zombie_hurt_03.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_hurt_03.ogg"
+  },
+  {
+   "name": "zombie_hurt_04",
+   "category": "zombie_voice",
+   "length_sec": 0.298,
+   "wav": "sfx/WAV/zombie_voice/zombie_hurt_04.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_hurt_04.ogg"
+  },
+  {
+   "name": "zombie_death_01",
+   "category": "zombie_voice",
+   "length_sec": 1.681,
+   "wav": "sfx/WAV/zombie_voice/zombie_death_01.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_death_01.ogg"
+  },
+  {
+   "name": "zombie_death_02",
+   "category": "zombie_voice",
+   "length_sec": 1.807,
+   "wav": "sfx/WAV/zombie_voice/zombie_death_02.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_death_02.ogg"
+  },
+  {
+   "name": "zombie_death_03",
+   "category": "zombie_voice",
+   "length_sec": 1.711,
+   "wav": "sfx/WAV/zombie_voice/zombie_death_03.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_death_03.ogg"
+  },
+  {
+   "name": "zombie_death_04",
+   "category": "zombie_voice",
+   "length_sec": 1.669,
+   "wav": "sfx/WAV/zombie_voice/zombie_death_04.wav",
+   "ogg": "sfx/OGG/zombie_voice/zombie_death_04.ogg"
+  },
+  {
+   "name": "zombie_footstep_shuffle_01",
+   "category": "zombie_movement",
+   "length_sec": 0.458,
+   "wav": "sfx/WAV/zombie_movement/zombie_footstep_shuffle_01.wav",
+   "ogg": "sfx/OGG/zombie_movement/zombie_footstep_shuffle_01.ogg"
+  },
+  {
+   "name": "zombie_footstep_shuffle_02",
+   "category": "zombie_movement",
+   "length_sec": 0.459,
+   "wav": "sfx/WAV/zombie_movement/zombie_footstep_shuffle_02.wav",
+   "ogg": "sfx/OGG/zombie_movement/zombie_footstep_shuffle_02.ogg"
+  },
+  {
+   "name": "zombie_footstep_shuffle_03",
+   "category": "zombie_movement",
+   "length_sec": 0.458,
+   "wav": "sfx/WAV/zombie_movement/zombie_footstep_shuffle_03.wav",
+   "ogg": "sfx/OGG/zombie_movement/zombie_footstep_shuffle_03.ogg"
+  },
+  {
+   "name": "zombie_footstep_shuffle_04",
+   "category": "zombie_movement",
+   "length_sec": 0.458,
+   "wav": "sfx/WAV/zombie_movement/zombie_footstep_shuffle_04.wav",
+   "ogg": "sfx/OGG/zombie_movement/zombie_footstep_shuffle_04.ogg"
+  },
+  {
+   "name": "flesh_hit_01",
+   "category": "gore",
+   "length_sec": 0.361,
+   "wav": "sfx/WAV/gore/flesh_hit_01.wav",
+   "ogg": "sfx/OGG/gore/flesh_hit_01.ogg"
+  },
+  {
+   "name": "flesh_hit_02",
+   "category": "gore",
+   "length_sec": 0.363,
+   "wav": "sfx/WAV/gore/flesh_hit_02.wav",
+   "ogg": "sfx/OGG/gore/flesh_hit_02.ogg"
+  },
+  {
+   "name": "flesh_hit_03",
+   "category": "gore",
+   "length_sec": 0.362,
+   "wav": "sfx/WAV/gore/flesh_hit_03.wav",
+   "ogg": "sfx/OGG/gore/flesh_hit_03.ogg"
+  },
+  {
+   "name": "flesh_hit_04",
+   "category": "gore",
+   "length_sec": 0.36,
+   "wav": "sfx/WAV/gore/flesh_hit_04.wav",
+   "ogg": "sfx/OGG/gore/flesh_hit_04.ogg"
+  },
+  {
+   "name": "flesh_hit_05",
+   "category": "gore",
+   "length_sec": 0.36,
+   "wav": "sfx/WAV/gore/flesh_hit_05.wav",
+   "ogg": "sfx/OGG/gore/flesh_hit_05.ogg"
+  },
+  {
+   "name": "blood_splat_01",
+   "category": "gore",
+   "length_sec": 0.429,
+   "wav": "sfx/WAV/gore/blood_splat_01.wav",
+   "ogg": "sfx/OGG/gore/blood_splat_01.ogg"
+  },
+  {
+   "name": "blood_splat_02",
+   "category": "gore",
+   "length_sec": 0.487,
+   "wav": "sfx/WAV/gore/blood_splat_02.wav",
+   "ogg": "sfx/OGG/gore/blood_splat_02.ogg"
+  },
+  {
+   "name": "blood_splat_03",
+   "category": "gore",
+   "length_sec": 0.431,
+   "wav": "sfx/WAV/gore/blood_splat_03.wav",
+   "ogg": "sfx/OGG/gore/blood_splat_03.ogg"
+  },
+  {
+   "name": "blood_splat_04",
+   "category": "gore",
+   "length_sec": 0.45,
+   "wav": "sfx/WAV/gore/blood_splat_04.wav",
+   "ogg": "sfx/OGG/gore/blood_splat_04.ogg"
+  },
+  {
+   "name": "zombie_bite_01",
+   "category": "gore",
+   "length_sec": 0.407,
+   "wav": "sfx/WAV/gore/zombie_bite_01.wav",
+   "ogg": "sfx/OGG/gore/zombie_bite_01.ogg"
+  },
+  {
+   "name": "zombie_bite_02",
+   "category": "gore",
+   "length_sec": 0.404,
+   "wav": "sfx/WAV/gore/zombie_bite_02.wav",
+   "ogg": "sfx/OGG/gore/zombie_bite_02.ogg"
+  },
+  {
+   "name": "zombie_bite_03",
+   "category": "gore",
+   "length_sec": 0.404,
+   "wav": "sfx/WAV/gore/zombie_bite_03.wav",
+   "ogg": "sfx/OGG/gore/zombie_bite_03.ogg"
+  },
+  {
+   "name": "pistol_shot_01",
+   "category": "weapons",
+   "length_sec": 0.868,
+   "wav": "sfx/WAV/weapons/pistol_shot_01.wav",
+   "ogg": "sfx/OGG/weapons/pistol_shot_01.ogg"
+  },
+  {
+   "name": "pistol_shot_02",
+   "category": "weapons",
+   "length_sec": 0.881,
+   "wav": "sfx/WAV/weapons/pistol_shot_02.wav",
+   "ogg": "sfx/OGG/weapons/pistol_shot_02.ogg"
+  },
+  {
+   "name": "pistol_shot_03",
+   "category": "weapons",
+   "length_sec": 0.914,
+   "wav": "sfx/WAV/weapons/pistol_shot_03.wav",
+   "ogg": "sfx/OGG/weapons/pistol_shot_03.ogg"
+  },
+  {
+   "name": "pistol_reload",
+   "category": "weapons",
+   "length_sec": 0.705,
+   "wav": "sfx/WAV/weapons/pistol_reload.wav",
+   "ogg": "sfx/OGG/weapons/pistol_reload.ogg"
+  },
+  {
+   "name": "pistol_empty_click",
+   "category": "weapons",
+   "length_sec": 0.082,
+   "wav": "sfx/WAV/weapons/pistol_empty_click.wav",
+   "ogg": "sfx/OGG/weapons/pistol_empty_click.ogg"
+  }
+ ]
+}
