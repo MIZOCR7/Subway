@@ -33,7 +33,7 @@ I built this game with **pure Python and Pygame**, without any heavy game engine
 ### Screenshots
 
 <img width="955" height="667" alt="Screenshot 2026-11-22 125636" src="https://github.com/user-attachments/assets/3d263134-6ecd-4af4-8497-375f2a24d866" />
-<img width="955" height="667" alt="Screenshot 2026-11-22 125636" src="https://github.com/user-attachments/assets/5f8b7ffc-9d4d-489b-9791-46b83cd69327" />
+<img width="960" height="670" alt="Screenshot 2026-11-22 125624" src="https://github.com/user-attachments/assets/831b5afe-6f29-4e80-b722-c309ccb5c22b" />
 
 ## Getting Started
 
